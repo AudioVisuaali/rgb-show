@@ -1,0 +1,20 @@
+{
+  "name": "@rgb-show/jest",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./lib/index.js",
+  "files": [
+    "app"
+  ],
+  "scripts": {
+    "lint": "rome check .",
+    "typescript-check": "tsc"
+  },
+  "devDependencies": {
+    "@swc/jest": "^0.2.24",
+    "@types/jest": "^29.4.0",
+    "jest": "^29.4.3",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1"
+  }
+}

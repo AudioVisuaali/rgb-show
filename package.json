@@ -1,0 +1,31 @@
+{
+  "name": "@rgb-show/root",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "npm": ">=9",
+    "node": ">=19"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "FORCE_COLOR=1 npx turbo run dev",
+    "dev:server": "FORCE_COLOR=1 npx turbo run dev --filter=@rgb-show/server",
+    "dev:client": "FORCE_COLOR=1 npx turbo run dev --filter=@rgb-show/client",
+    "dev:playground": "FORCE_COLOR=1 npx turbo run dev --filter=@rgb-show/playground",
+    "lint": "FORCE_COLOR=1 npx turbo run lint",
+    "typescript-check": "turbo run typescript-check",
+    "test": "FORCE_COLOR=1 npx turbo run test",
+    "test:update": "FORCE_COLOR=1 npx turbo run test:update",
+    "build": "FORCE_COLOR=1 npx turbo run build",
+    "build:app:server": "npx turbo run build --filter=@rgb-show/server",
+    "build:app:client": "npx turbo run build --filter=@rgb-show/client",
+    "build:app:playground": "npx turbo run build --filter=@rgb-show/playground",
+    "build:package:logger": "npx turbo run build --filter=@rgb-show/logger"
+  },
+  "devDependencies": {
+    "turbo": "^1.8.2"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@rgb-show/logger",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./lib/index.js",
+  "files": ["lib"],
+  "scripts": {
+    "dev": "tsc-watch --preserveWatchOutput",
+    "build": "tsc",
+    "lint": "rome check .",
+    "typescript-check": "tsc",
+    "test": "jest --detectOpenHandles --config ../../node_modules/@rgb-show/jest/app/jest-server.ts",
+    "test:update": "jest -u --detectOpenHandles --config ../../node_modules/@rgb-show/jest/app/jest-server.ts"
+  },
+  "devDependencies": {
+    "@rgb-show/jest": "*",
+    "@rgb-show/typescript-development": "*",
+    "pino-pretty": "^9.1.1"
+  },
+  "dependencies": {
+    "pino": "^8.9.0"
+  }
+}

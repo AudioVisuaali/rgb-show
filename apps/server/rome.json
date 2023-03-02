@@ -1,0 +1,6 @@
+{
+  "$schema": "../../rome.json",
+  "linter": {
+    "ignore": ["lib", ".turbo"]
+  }
+}

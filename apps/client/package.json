@@ -1,0 +1,22 @@
+{
+  "name": "@rgb-show/client",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./lib/index.js",
+  "files": ["lib"],
+  "scripts": {
+    "dev": "tsc-watch --preserveWatchOutput --onSuccess \"node -r dotenv/config ./dist/index.js\"",
+    "build": "tsc",
+    "lint": "rome check .",
+    "typescript-check": "tsc",
+    "test": "jest --detectOpenHandles --config ../../node_modules/@rgb-show/jest/app/jest-server.ts",
+    "test:update": "jest -u --detectOpenHandles --config ../../node_modules/@rgb-show/jest/app/jest-server.ts"
+  },
+  "dependencies": {
+    "@rgb-show/environment": "*"
+  },
+  "devDependencies": {
+    "@rgb-show/jest": "*",
+    "@rgb-show/typescript-development": "*"
+  }
+}

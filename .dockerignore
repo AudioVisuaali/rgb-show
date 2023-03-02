@@ -1,0 +1,13 @@
+.github/
+.vscode/
+aws
+dist
+build
+.env
+.env.*
+.gitignore
+.nvmrc
+docker-compose.yml
+jest.config.ts
+README.md
+node_modules
